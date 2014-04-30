@@ -26,7 +26,7 @@ class AboutWithStatements(Koan):
             self.fail()
 
     def test_counting_lines(self):
-        self.assertEqual(4, self.count_lines("D:/example_file.txt"))
+        self.assertEqual(4, self.count_lines("example_file.txt"))
 
     # ------------------------------------------------------------------
 
@@ -45,7 +45,7 @@ class AboutWithStatements(Koan):
             self.fail()
 
     def test_finding_lines(self):
-        self.assertEqual('test\n', self.find_line("D:/example_file.txt"))
+        self.assertEqual('test\n', self.find_line("example_file.txt"))
 
     ## ------------------------------------------------------------------
     ## THINK ABOUT IT:
@@ -92,7 +92,7 @@ class AboutWithStatements(Koan):
         return count
 
     def test_counting_lines2(self):
-        self.assertEqual(4, self.count_lines2("D:/example_file.txt"))
+        self.assertEqual(4, self.count_lines2("example_file.txt"))
 
     # ------------------------------------------------------------------
 
@@ -105,8 +105,8 @@ class AboutWithStatements(Koan):
                     return line
 
     def test_finding_lines2(self):
-        self.assertEqual('test\n', self.find_line2("D:/example_file.txt"))
-        self.assertNotEqual(None, self.find_line2("D:/example_file.txt"))
+        self.assertEqual('test\n', self.find_line2("example_file.txt"))
+        self.assertNotEqual(None, self.find_line2("example_file.txt"))
 
     # ------------------------------------------------------------------
 
@@ -118,4 +118,4 @@ class AboutWithStatements(Koan):
             return count
 
     def test_open_already_has_its_own_built_in_context_manager(self):
-        self.assertEqual(4, self.count_lines3("D:/example_file.txt"))
+        self.assertEqual(4, self.count_lines3("example_file.txt"))

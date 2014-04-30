@@ -99,7 +99,7 @@ class AboutIteration(Koan):
         self.assertEqual([11,12,13], list(result))
 
         try:
-            f = open("D:/example_file.txt")
+            f = open("example_file.txt")
 
             try:
                 def make_upcase(line):
